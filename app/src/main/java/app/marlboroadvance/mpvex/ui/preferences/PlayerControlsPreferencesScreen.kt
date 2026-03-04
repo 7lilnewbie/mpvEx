@@ -199,6 +199,7 @@ object PlayerControlsPreferencesScreen : Screen {
                   headlineContent = {
                     Text(text = style.name)
                   },
+                  // build
 
                   supportingContent = {
                     SeekbarPreview(
