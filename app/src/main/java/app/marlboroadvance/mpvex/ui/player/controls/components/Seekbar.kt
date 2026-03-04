@@ -809,3 +809,71 @@ private fun PreviewSeekBar() {
     paused = false,
   )
 }
+
+@Composable
+fun SeekbarPreview(
+    style: SeekbarStyle,
+    modifier: Modifier = Modifier,
+    onClick: (() -> Unit)? = null,
+) {
+    // Static values instead of animation
+    val duration = 100f
+    val position = duration * 0.4f // 40% progress (static preview position)
+
+    // Dummy chapters for preview to visualize chapter separation
+    val dummyChapters = persistentListOf(
+        Segment(name = "Chapter 1", start = 0f),
+        Segment(name = "Chapter 2", start = duration * 0.35f),
+        Segment(name = "Chapter 3", start = duration * 0.65f),
+    )
+
+    Box(
+        modifier = modifier
+            .height(32.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        when (style) {
+            SeekbarStyle.Standard -> {
+                StandardSeekbar(
+                    position = position,
+                    duration = duration,
+                    chapters = dummyChapters,
+                    isPaused = true,          // static
+                    isScrubbing = false,
+                    useWavySeekbar = false,
+                    seekbarStyle = SeekbarStyle.Standard,
+                    onSeek = {},
+                    onSeekFinished = {},
+                )
+            }
+
+            SeekbarStyle.Wavy -> {
+                SquigglySeekbar(
+                    position = position,
+                    duration = duration,
+                    chapters = dummyChapters,
+                    isPaused = true,          // static
+                    isScrubbing = false,
+                    useWavySeekbar = true,
+                    seekbarStyle = SeekbarStyle.Wavy,
+                    onSeek = {},
+                    onSeekFinished = {},
+                )
+            }
+
+            SeekbarStyle.Thick -> {
+                StandardSeekbar(
+                    position = position,
+                    duration = duration,
+                    chapters = dummyChapters,
+                    isPaused = true,          // static
+                    isScrubbing = false,
+                    useWavySeekbar = false,
+                    seekbarStyle = SeekbarStyle.Thick,
+                    onSeek = {},
+                    onSeekFinished = {},
+                )
+            }
+        }
+    }
+}
