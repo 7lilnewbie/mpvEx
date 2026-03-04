@@ -199,6 +199,13 @@ object PlayerControlsPreferencesScreen : Screen {
                   headlineContent = {
                     Text(text = style.name)
                   },
+
+                  supportingContent = {
+                    SeekbarPreview(
+                      style = style,
+                      modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
+                    )
+                  },
                   trailingContent = {
                     RadioButton(
                       selected = seekbarStyle == style,
