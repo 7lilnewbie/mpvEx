@@ -818,9 +818,9 @@ fun SeekbarPreview(
 ) {
     // Static values instead of animation
     val duration = 100f
-    val position1 = duration * 0.20f // 15% progress (static preview position)
+    val position1 = duration * 0.18f
     val position2 = duration * 0.5f
-    val position3 = duration * 0.70f
+    val position3 = duration * 0.82f
 
     // Dummy chapters for preview to visualize chapter separation
     val dummyChapters = persistentListOf(
@@ -856,7 +856,7 @@ fun SeekbarPreview(
                     chapters = dummyChapters,
                     isPaused = false,          // static
                     isScrubbing = false,
-                    useWavySeekbar = true,
+                    useWavySeekbar = false,
                     seekbarStyle = SeekbarStyle.Wavy,
                     onSeek = {},
                     onSeekFinished = {},
