@@ -818,7 +818,9 @@ fun SeekbarPreview(
 ) {
     // Static values instead of animation
     val duration = 100f
-    val position = duration * 0.4f // 40% progress (static preview position)
+    val position1 = duration * 0.15f // 15% progress (static preview position)
+    val position2 = duration * 0.5f
+    val position3 = duration * 0.85f
 
     // Dummy chapters for preview to visualize chapter separation
     val dummyChapters = persistentListOf(
@@ -835,10 +837,10 @@ fun SeekbarPreview(
         when (style) {
             SeekbarStyle.Standard -> {
                 StandardSeekbar(
-                    position = position,
+                    position = position1,
                     duration = duration,
                     chapters = dummyChapters,
-                    isPaused = true,          // static
+                    isPaused = false,          // static
                     isScrubbing = false,
                     useWavySeekbar = false,
                     seekbarStyle = SeekbarStyle.Standard,
@@ -849,10 +851,10 @@ fun SeekbarPreview(
 
             SeekbarStyle.Wavy -> {
                 SquigglySeekbar(
-                    position = position,
+                    position = position2,
                     duration = duration,
                     chapters = dummyChapters,
-                    isPaused = true,          // static
+                    isPaused = false,          // static
                     isScrubbing = false,
                     useWavySeekbar = true,
                     seekbarStyle = SeekbarStyle.Wavy,
@@ -863,10 +865,10 @@ fun SeekbarPreview(
 
             SeekbarStyle.Thick -> {
                 StandardSeekbar(
-                    position = position,
+                    position = position3,
                     duration = duration,
                     chapters = dummyChapters,
-                    isPaused = true,          // static
+                    isPaused = false,          // static
                     isScrubbing = false,
                     useWavySeekbar = false,
                     seekbarStyle = SeekbarStyle.Thick,
@@ -877,4 +879,3 @@ fun SeekbarPreview(
         }
     }
 }
-//lets build then
