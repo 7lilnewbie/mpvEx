@@ -1,9 +1,12 @@
 ![banner](fastlane/metadata/android/en-US/images/featureGraphic.png)
 
-# mpvExtended
+<div align="center">
+  <h1>mpvExtended</h1>
+
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/marlboro-advance/mpvex.svg?logo=github&label=GitHub&cacheSeconds=3600)](https://github.com/marlboro-advance/mpvex/releases/latest)
 [![GitHub all releases](https://img.shields.io/github/downloads/marlboro-advance/mpvex/total?logo=github&cacheSeconds=3600)](https://github.com/marlboro-advance/mpvex/releases/latest)
 [![Privacy Policy](https://img.shields.io/badge/Privacy%20Policy-View-brightgreen?logo=shield)](https://marlboro-advance.github.io/mpvEx/privacy-policy.html)
+</div>
 
 
 **mpvExtended is a fork of [mpv-android](https://github.com/mpv-android/mpv-android), built on the libmpv library. It aims
@@ -33,7 +36,9 @@ the [Issues](https://github.com/marlboro-advance/mpvEx/issues) section.**
 
 ---
 
-## Installation
+<div align="center">
+  <h1>Installation</h1>
+</div>
 
 ### Stable Release
 Download the latest stable version from the [GitHub releases page](https://github.com/marlboro-advance/mpvEx/releases).
@@ -51,7 +56,9 @@ For testing purposes only
 
 ---
 
-## Showcase
+<div align="center">
+  <h1>Showcase</h1>
+</div>
 <div class="image-row" align="center">
   <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/player.png" width="98%" />
 </div>
@@ -157,14 +164,30 @@ Copy the contents of `keystore.txt` and paste it as the value for the `SIGNING_K
 
 ---
 
-## Support the Project <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Ribbon.png" alt="Heart with Ribbon" width="25" height="25" />
+<div align="center">
+  <h2>Support the Project <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Ribbon.png" alt="Heart with Ribbon" width="25" height="25" /></h2>
+  <p>If you find mpvExtended useful, consider supporting the development:</p>
+</div>
 
-If you find mpvExtended useful, consider supporting the development:
+<div align="center">
+  <a href="upi://pay?pa=aadiinarvekar@upi">
+    <img
+      src="https://img.shields.io/badge/UPI-aadiinarvekar@upi-blue?style=for-the-badge&logo=google-pay&logoColor=white"
+      alt="Pay via UPI"
+    >
+  </a>
+</div>
 
-[![UPI](https://img.shields.io/badge/UPI-aadiinarvekar@upi-blue?style=for-the-badge&logo=google-pay&logoColor=white)](upi://pay?pa=aadiinarvekar@upi)
+
+<div align="center">
+<img src="fastlane/metadata/android/en-US/images/qrx.svg" alt="Support QR Code" width="35.3%" />
+</div>
 
 ---
-## Star History <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" alt="Star" width="25" height="25" />
+
+<div align="center">
+  <h3>Star History <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" alt="Star" width="25" height="25" /></h3>
+</div>
 
 <a href="https://www.star-history.com/#marlboro-advance/mpvEx&type=date&legend=top-left">
  <picture>
